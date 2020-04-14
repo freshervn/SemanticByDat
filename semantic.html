@@ -1,0 +1,341 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Test semantic</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+          
+        }
+        nav {
+            width: 100%;
+            background-color: #1d1d1d;
+            color: blanchedalmond;
+            text-align: center;
+        }
+
+        nav ul li header {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0px;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            text-align: center;
+            padding: 4px 10px 4px 10px;
+        }
+
+        nav a:link {
+            text-decoration: none;
+            color: blue;
+        }
+
+        nav a:visited {
+            color: #8e4ace;
+        }
+
+        nav a:hover {
+            background-color: black;
+            color: whitesmoke;
+            font-size: 2vw;
+        }
+
+        nav a:active {
+            color: red;
+        }
+
+        main {
+            position: relative;
+            left: 15%;
+            width: 70%;
+            margin: 0px;
+        }
+
+        article {
+            border-radius: 15px;
+            margin: 2vw;
+        }
+
+        .article_header {
+            background-color: blueviolet;
+            border-radius: 15px;
+            padding: 2vw;
+            color: black;
+        }
+
+        .article_content {
+            padding: 2vw;
+        }
+
+        time {
+            position: relative;
+            font-style: italic;
+            top: -15px;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 25px;
+            margin-top: 5%;
+        }
+
+        section:nth-child(odd) p {
+            position: relative;
+            right: -15%;
+            ;
+        }
+
+        section:nth-child(even) p {
+            position: relative;
+            left: -15%;
+        }
+
+        section p {
+            border: solid 1px black;
+            width: 50%;
+            border-radius: 3%;
+            padding: 2vw;
+            font-size: 19px;
+            font-style: oblique;
+            height: fit-content;
+        }
+
+        section img {
+            width: 50%;
+            padding: 5%;
+            border-radius: 50%;
+        }
+
+        section h3 {
+            background-color: #2c0c2c;
+            width: 100%;
+            margin-top: 0;
+            border-radius: 5px;
+            padding: 1vw;
+            color: rgb(168, 136, 180);
+            "
+
+        }
+
+        .content {
+            width: 50%;
+        }
+
+        #list1 li {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #blood {
+            background-color: #000000;
+            color: #990000;
+            padding: 4px;
+            font-style: italic;
+            font-weight: bold;
+
+        }
+
+        aside {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 15%;
+            background-color: white;
+        }
+
+        #tag {
+            background-color: royalblue;
+            padding: 2vw;
+        }
+
+        footer {
+            background-image: url(https://i.pinimg.com/236x/24/da/46/24da468c1c24a9f440ffac442f1a9a9c.jpg);
+            height: 15%;
+        }
+
+        .test_background {
+            position: relative;
+            background-image: url(https://i.pinimg.com/236x/a2/ed/ae/a2edaee650edae09a7a5f72032c978e4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: royalblue;
+            width: 360px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="body">
+    <nav>
+        <ul>
+            <li>
+                <header>
+                    <h3>Note/Manga</h3>
+                </header>
+            </li>
+            <li> <a href="C:\Users\ASUS\Documents\GitHub\fresher.github.io\semantic.html"> Home</a></li>
+            <li> <a href="C:\Users\ASUS\Documents\GitHub\fresher.github.io\Naruto.html">Naruto</a> </li>
+            <li> <a href="C:\Users\ASUS\Documents\GitHub\fresher.github.io\OnePiece.html">One Piece</a> </li>
+            <li> <a href="C:\Users\ASUS\Documents\GitHub\fresher.github.io\AttackOnTitan.html">Attack on titan</a> </li>
+        </ul>
+    </nav>
+    <div id="store" style="display: flex;">
+        <main>
+            <article>
+                <div class="article_header">
+                    <h2 > Dùng thẻ đánh dấu nội dung HTML (Semantic elements)</h2>
+                    <time>4/9/2020</time>
+                </div>
+                <div class="article_content">
+                    <section style="background-color: #b07fc7;">
+                        <img src="file:///C:/Users/ASUS/Pictures/slide%201.png" alt="">
+                        <p style="background-color: #624280;"> Mỗi một trang web thì luôn có bố cục và được cấu thành từ
+                            các phần nhỏ như
+                            tiêu đề, thanh tiêu công cụ, ảnh, chú thích, bảng, khu vực nội dung khác nhau.
+                            Vấn đề là khi bạn dùng thẻ để thiết kế 1 trang web bạn sẽ đặt tên và thuộc tính cho chúng
+                            thế nào.
+                            Hiện tại có 2 cách phổ biến mà mình thường thấy trong thiết kế. <br>
+                            sau đây mình sẽ phân tích từng cách sử dụng, và
+                            kinh nhiệm mình rút ra là khi nào nên sử dụng cách 1( <b>div và id</b>) khi nào nên sử dụng
+                            cách 2 ( <b>Semantic elements</b>)
+                        </p>
+                        <blockquote style=" margin-top: 1%; margin-left: 5%;">
+                            <ol id="list1">
+                                <li><a href="#div_va_id">
+                                        <h3>Dùng div và id để phân chia các phần của trang web.</h3>
+                                    </a></li>
+                                <li><a href="#tag">
+                                        <h3> Dùng thẻ có sẵn để phân chia.</h3>
+                                    </a></li>
+                            </ol>
+                        </blockquote>
+                </div>
+                </section>
+                <section id="div_va_id"
+                    style="padding: 2vw;background-color:darkorchid;display: inherit; padding-bottom: 5%;">
+                    <h3>1.Dùng div với id</h3>
+
+
+                    <iframe width="70%" height="340px" src="https://www.youtube.com/embed/-XQlr727A8w" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                        style="position: relative;left: 15%;"></iframe>
+                    <details style="display: block;outline: none; border: none;margin-top: 16px; background-color: #504df8;border-radius: 10px; padding-bottom: 17px;">
+                        <summary style="
+                            width: 90%;
+                            position: relative;
+                            left: 5%;
+                            top: 12px;
+                             font-size: 16px;
+                             font-weight: bold;
+                             font-style: italic;"> Div là một thẻ cực kì thông dụng với chức năng chính là để phân chia
+                            khu vực.
+                            Bạn có thể gặp thẻ này ở bất kỳ trang web nào, chỉ cần f12 trong trang web rồi vào phần
+                            elements sẽ thấy.
+                        </summary>
+                        <p style="border: none;width: 90%;
+                            position: relative;
+                            left: 5%;">Tại sao thẻ div lại thông dụng?<br>
+                            Thẻ div (division =" khu vực")
+                            Thực ra div là thẻ trống các phần tử trong nó ko được định nghĩa gì cả,
+                            nhưng sau khi bao nội dung thẻ div thì ta mới có thê đặt các thuộc tính cho nội dung trong
+                            thẻ,
+                            màu sắc, sắp xếp, căn chỉnh.
+                            Thế nên mình cảm thấy nếu muốn tạo 1 cái gì đó dùng div rất tiện. Mình có thể dùng div để
+                            chứa tiêu đề,
+                            chứa nội, chứa quảng cáo, chứa ...
+                            Như thể bạn có một tờ giấy trắng có thể vẽ gì tùy ý.
+                            <br>
+                            <i> tất cả những gì mình bạn cần làm là dùng div bọc lấy 1 cái gì đó rồi đặt id là bạn có
+                                thẻ thay đổi style trong css hay tương tác với script rồi.</i>
+                        </p>
+                    </details>
+                </section>
+                <section id="tag">
+                    <h3>2. Dùng thẻ có sẵn</h3>
+                    <div style="display: grid;
+                    grid-template-columns:  70% 30%;">
+                        <iframe style="position: relative; left: 0%;" width="700" height="400"
+                            src="https://www.youtube.com/embed/swWeWesZVZU" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div style="position: relative;right: 25%; top: -2%;">
+                            <p id="camxuc" class="test_background">Một sai lầm của mình khi học html là quá lạm dụng thẻ div ở
+                                trên.<br>
+                                mình dùng div để chia mọi thứ, và như thế cũng ko tệ mọi thứ vẫn hoạt động ổn.
+                                Chỉ là sau một thời gian nhìn code thật khó đọc, và nhìn quá thiếu chuyên nghiệp, cảm
+                                giác
+                                tội lỗi khi mình không hiểu HTMl.
+                                nên mình đã học lại Semantic element.
+                                <br>
+                                <button  id="down" onclick="more()" style="font-size:32px ; color: blue; position:absolute; left: 47%; background: none; border: none; outline: none;"><i class="fa fa-caret-down"></i></button>                                
+                                <span id="open" style="display: none; transition: linear;transition-duration: 4s;">
+                                    Hóa ra làm việc chuyên nghiệp có cái ngầu của nó, dùng các thẻ có sẵn giúp mình có máu
+                                    thiết
+                                    kế,
+                                    hiểu cách thiết kế nội dung, từng lớp từng lớp một đi sâu làm trang wed có lẽ là thân
+                                    thiện
+                                    hơn chăng. từ ngữ mình dùng chưa chắc chính sác cười :">.
+                                    Dù gì "ngữ văn" mình kém nên đến cả tiêu đề hay chú thích hay đề mục gì đó mình không
+                                    chú ý
+                                    lắm nhưng trong html nó có các thẻ đấy.
+                                    và sử dụng thẻ ấy như một gợi ý viết nội dung của trang wed vậy. khi có gợi ý mình nghĩ
+                                    dc
+                                    nội dung go on and go on.
+                                </span>
+                            
+                                <button  id="up" onclick="less()" style="font-size:32px ; color: blue; position:absolute; left: 47%; background: none; border: none; outline: none; display: none;"><i class="fa fa-caret-up"></i></button>                           
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section style="background-color:whitesmoke; padding: 3%; color: #2d4dda; font-size: 20px;">
+                    <blockquote style=" font-weight: bold; font-style: normal;"> Kinh nhiệm rút ra là mình sẽ không lạm dụng thẻ div để thiết kế nội dung văn bản.
+                        Nhưng sẽ dùng nó để thiết kế các trang web ứng dụng hoặc phi văn bản :D</blockquote>
+                </section>
+    </div>
+
+    </article>
+    </main>
+    </div>
+    <img style="position:fixed;top: 0; z-index: -1;" src="https://img5.goodfon.com/wallpaper/nbig/5/31/4k-ultra-hd-background-trees-leaves-moon-night-sky-purple-na.jpg"alt="">
+    <footer>
+            <div style="position: relative;">
+                <button style="font-size:24px; background: black; outline: none; border: none; position: absolute;top:25px;color: whitesmoke;opacity: 0.5;padding: 10px;" horver><i class="fa fa-chevron-right font-size:30px"></i></button>
+                <address>Fb của Mình: https://www.facebook.com/guyfawker4/</address>
+            </div>
+            
+    </footer>
+    <script>
+        function more(){
+            document.getElementById("open").style.display="block";
+            document.getElementById("down").style.display="none";
+            document.getElementById("camxuc").style.top="-80px";
+            document.getElementById("up").style.display= "block";
+        }    
+        function less(){
+            document.getElementById("open").style.display="none";
+            document.getElementById("down").style.display="inherit";
+            document.getElementById("camxuc").style.top="inherit";
+            document.getElementById("up").style.display= "none";
+        }   
+    </script>
+    
+</div>
+</body>
+
+</html>
